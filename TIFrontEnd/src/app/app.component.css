@@ -1,0 +1,82 @@
+#MAIN {
+	box-sizing: content-box; /* this makes IE work - careful on dimensions*/
+	overflow-x: auto;
+	overflow-y: scroll;
+	position: absolute;
+	width: calc(100% - 189px);
+	top: 120px;
+	left: 200px;
+	height: calc(100% - 110px);
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	border-bottom: 4px solid #999; 
+	border-right: 4px solid #999; 
+}
+
+#MENU {
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	/* border-bottom: 2px solid #999;  */
+	width: 100%;
+}
+
+#PAGE_HEADER {
+	box-sizing: content-box;
+	position: fixed;
+	width: calc(100% - 189px);
+	top: 70px;
+	left: 200px;
+	height: 30px;
+	padding-left: 0px;
+	padding-right: 0px;
+	border-right: 4px solid #999; 
+	border-bottom: 1px solid #B2C8EC;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+#PAGE_HEADER div.row div.col-xs-12 {
+	height: 35px;
+	padding-left: 15px;
+	padding-right: 0px;
+}
+
+#PAGE_HEADER div.row {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+#RIGHT {
+	position: fixed;
+	right: 0;
+	width: 0;
+	height: 100%;
+}
+
+.ti-navbar-header {
+	min-height: 40px;
+	height: 50px;
+	border-radius: 0;
+	background-image: none;
+	background-color: #ffffff;
+	border: 0;
+	border-bottom: 3px solid #999999;
+	color: #000;
+	-webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.30);;
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,0.30);;
+}
+
+.navbar-default .navbar-nav > .open > a {
+	background-color: #e5e5f9 !important;
+  }
+
+.navbar-text{margin-top:15px;margin-bottom:15px}
+
+.container-fluid {
+	padding-right: 0px;
+	padding-left: 0px;
+  }

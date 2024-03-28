@@ -1,0 +1,17 @@
+<div class="menubar">
+    <div class="menubar-content">
+        <div ID="MENU">
+            <div id="MENU_BTN_GROUP">
+                <button mat-raised-button 
+                    *ngIf="!hideButton"
+                    id="menuClose"
+                    (click)="onClick()"
+                    >{{buttonName}}</button>
+            </div>
+
+        </div>
+        <div ID="NAV_MENU">
+            <p>menu-bar works!</p>
+        </div>
+    </div>
+</div>

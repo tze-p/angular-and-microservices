@@ -1,0 +1,12 @@
+<div class="navbar-text">
+    <img class="logo vcenter" src="../../assets/image/Branding_Logo.png">
+
+    <div class="right" *ngIf="!loggedOut">
+        <button mat-raised-button color="primary" id="Logout" 
+        (click)="onLogout()"
+        [disabled]="loggedOut"
+        >Logout</button>
+    </div>
+</div>
+
+

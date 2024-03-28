@@ -1,0 +1,25 @@
+.navbar-text{margin-top:15px;margin-bottom:15px}
+
+img.logo {
+	/* the misys logos are white lined expecting the background colour to bleed through
+	 however, background colours do not print, so use a filter to invert the colours.
+	 */
+	/*xfilter: url(inverse.svg#negative);
+	x-webkit-filter: invert(100%);
+	xfilter: invert(100%);*/
+	min-width: 318px;
+	min-height: 32px;
+}
+
+.is-hidden {
+	display: none;
+}
+
+.right {
+	margin: 0;
+	position: absolute;
+	top: 5%;
+	right: 0%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+  }

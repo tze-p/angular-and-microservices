@@ -1,0 +1,50 @@
+.ti-data-table-header-row {
+	height: 1px;
+}
+
+.fixed-table-container {
+	/* border: 1px solid black;*/
+	margin: 10px auto;
+	background-color: white;
+	/* above is decorative or flexible */
+	position: relative; /* could be absolute or relative */
+	border-bottom: 2px solid #E5EAF3;
+	padding-bottom: 1px;
+}
+
+.ti-data-table>thead>tr>th {
+	font-family: 'Roboto-Medium', sans-serif;
+	font-weight: normal;
+	font-size: 13px;
+	color: #4b75b3;
+}
+.ti-data-table>tbody {
+	vertical-align: top;
+}
+
+.ti-data-table>tbody>tr {
+	font-family: 'Roboto-Regular', sans-serif;
+	font-weight: normal;
+	font-size: 13px; /* TI Change for font reduction */
+	color: #000000;
+	border: 1px solid transparent;
+	vertical-align: inherit;
+}
+
+
+.ti-data-table>tbody>tr>td {
+	font-family: inherit;
+	font-weight: inherit;
+	font-size: inherit;
+	border-right: 1px solid #dddddd;
+	height: 22px; /* TI Change for font reduction */
+	vertical-align: inherit;
+}
+
+.ti-data-table.table-hover>tbody>tr.active {
+	background-color: #b2c8ec;
+}
+
+.ti-data-table.table-hover>tbody>tr.active td {
+	background-color: inherit;
+}

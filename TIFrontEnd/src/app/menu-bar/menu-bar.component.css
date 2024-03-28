@@ -1,0 +1,55 @@
+.menubar {
+	background-color: #f2f5fa;
+	width: 185px;
+	height: calc(100% - 71px);
+	position: fixed;
+	left: 0px;
+	top: 67px;
+	border-left: 4px solid #999; 
+	border-right: 4px solid #999; 
+	border-bottom: 4px solid #999; 
+}
+
+.menubar-content {
+    overflow-x: visible;
+    overflow-y: visible;
+    overflow: visible;
+}
+
+#MENU {
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-bottom: 2px solid #999; 
+	width: 100%;
+}
+
+#MENU_BTN_GROUP {
+	width: 100%;
+}
+
+#NAV_MENU {
+	width: 100%;
+	padding-top: 5px;
+	padding-right: 2px;
+	padding-left: 2px;
+}
+
+.mnu-btn {
+	border-top-style: solid;
+	border-top-width: 1px;
+	text-align: left;
+	height: auto;
+	min-height: 21px;
+	white-space: normal;
+	background-color: #f2f5fa;
+	color: #969696;
+	font-family: 'Roboto-Bold', sans-serif;
+	font-size: 13px;
+}
+
+.panel-info .panel-body .T1 .btn-default {
+	background-color: #99ab21;
+	border: 0 solid #99ab21
+}

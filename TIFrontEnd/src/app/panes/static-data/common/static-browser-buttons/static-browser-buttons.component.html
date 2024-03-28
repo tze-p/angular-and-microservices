@@ -1,0 +1,27 @@
+<tbody>
+    <tr>
+        <p></p>
+    </tr>
+    <tr>
+        <td><button mat-raised-button color="primary" id="New"
+            (click)="onClickNew()"
+            [disabled]="true"
+            >New...</button></td>
+        <td><button mat-raised-button color="primary" disabled id="Copy"
+            (click)="onClickCopy()"
+            [disabled]="true"
+            >Copy...</button></td>
+        <td><button mat-raised-button color="primary" disabled id="Update"
+            (click)="onClickUpdate()" 
+            [disabled]="true"
+            >Update...</button></td>
+        <td><button mat-raised-button color="primary" disabled id="Delete"
+            (click)="onClickDelete()" 
+            [disabled]="true"
+            >Delete...</button></td>
+        <td><button mat-raised-button color="primary" id="View"
+            (click)="onClickView()" 
+            [disabled]="!selected"
+            >View...</button></td>
+    </tr>
+</tbody>
