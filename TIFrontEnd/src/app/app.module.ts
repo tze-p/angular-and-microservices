@@ -30,6 +30,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { SharedService } from './services/common/shared.service';
+import { AttachedDocumentTypeBrowserComponent } from './panes/static-data/AttachedDocumentType/attached-document-type-browser/attached-document-type-browser.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { SharedService } from './services/common/shared.service';
     SystemTailoringComponent,
     ErrorComponent,
     MenuBarComponent,
-    StaticBrowserButtonsComponent
+    StaticBrowserButtonsComponent,
+    AttachedDocumentTypeBrowserComponent
   ],
   imports: [
     BrowserModule, FormsModule, ReactiveFormsModule, 

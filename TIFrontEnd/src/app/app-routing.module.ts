@@ -7,6 +7,7 @@ import { ApplicationListComponent } from './application-list/application-list.co
 import { ErrorComponent } from './error/error.component';
 import { LoginComponent } from './login/login.component';
 import { AuthGuard } from './services/helpers/auth.guard';
+import { AttachedDocumentTypeBrowserComponent } from './panes/static-data/AttachedDocumentType/attached-document-type-browser/attached-document-type-browser.component';
 
 const routes: Routes = [
   {path: '', component: ApplicationListComponent, canActivate: [AuthGuard] },
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path: 'TradeFinanceProcessing', component: TradeFinanceProcessingComponent},
   {path: 'SystemTailoring', component: SystemTailoringComponent},
   {path: 'StaticDataMaintenance', component: StaticDataComponent},
+  {path: 'StaticDataMaintenance/AttachedDocumentTypeBrowser', component: AttachedDocumentTypeBrowserComponent},
   {path: '**', component: ErrorComponent}
 ];
 
