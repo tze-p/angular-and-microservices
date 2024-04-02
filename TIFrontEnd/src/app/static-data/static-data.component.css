@@ -32,3 +32,26 @@ section {
     font-weight: bold;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+#p0 {
+    text-indent: 50em;
+}
+
+.button {
+    height: 35px;
+    width: 250px;
+    color: gray;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.default {
+    color: black;
+}
+
+.highlight {
+    color: purple;
+    background-color: lightblue;
+    cursor: pointer;
+}
