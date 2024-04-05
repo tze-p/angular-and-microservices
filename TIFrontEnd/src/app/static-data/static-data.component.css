@@ -33,13 +33,9 @@ section {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-#p0 {
-    text-indent: 50em;
-}
-
 .button {
-    height: 35px;
-    width: 250px;
+    height: 40px;
+    width: 240px;
     color: gray;
     border: 2px solid black;
     border-radius: 5px;
