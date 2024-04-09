@@ -45,12 +45,9 @@
             </tr>
         </tbody>
     </table>
-    <p>
-        <app-static-buttons-component (notifyParent)="onClickStaticButtons($event)" [loading]="loading"
-            [selected]="selected">
-        </app-static-buttons-component>
-
-    <table mat-table [dataSource]="items" id="tableDetails">
+    
+    <!-- display table if we have items to show -->
+    <table mat-table [dataSource]="items" id="tableDetails" *ngIf="itemCount">
         <ng-container matColumnDef="Type">
             <th mat-header-cell *matHeaderCellDef>Type</th>
             <td mat-cell *matCellDef="let item"> {{item.showType}} </td>
@@ -70,5 +67,11 @@
         <tr mat-row *matRowDef="let item; columns: displayedHeaderColumn;" (click)="getRecord(item)"
             [class.blue]="selectedItem.Key === item.Key" class="record-element-row"></tr>
     </table>
+
+    <!-- display other buttons -->
+    <p>
+        <app-static-buttons-component (notifyParent)="onClickStaticButtons($event)" [loading]="loading"
+            [selected]="selected">
+        </app-static-buttons-component>
 
 </div>

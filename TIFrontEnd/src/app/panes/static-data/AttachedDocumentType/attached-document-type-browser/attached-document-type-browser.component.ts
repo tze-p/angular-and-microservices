@@ -30,7 +30,8 @@ export class AttachedDocumentTypeBrowserComponent extends TIPaneComponent {
   filter: FilterAttachedDocumentType = new FilterAttachedDocumentType;
 
   items: AttachedDocumentType[] = [];
-  
+  itemCount: 0;
+
   displayedHeaderColumn: string[] = ['Type', 'Key', 'Description'];
 
   // getting information from the DB
@@ -74,7 +75,7 @@ export class AttachedDocumentTypeBrowserComponent extends TIPaneComponent {
   onRefresh(){
     // console.log('Start retrieving from API');
     // console.log(this.filter);
-  
+    this.itemCount = 0;
     this.loading = true;
     this.attachedDocTypeService.RetrieveAttachedDocumentTypes(this.filter)
     .subscribe({ 
@@ -82,6 +83,7 @@ export class AttachedDocumentTypeBrowserComponent extends TIPaneComponent {
         this.items = data;
         this.items.forEach( (item) =>{
           item.showType = processShowType(item.Type);
+          this.itemCount ++;
         })
         // console.log('End retrieving from API');
         this.loading = false;
