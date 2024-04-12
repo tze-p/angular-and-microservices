@@ -47,6 +47,7 @@
     </table>
     
     <!-- display table if we have items to show -->
+    <hr  *ngIf="itemCount"/>
     <table mat-table [dataSource]="items" id="tableDetails" *ngIf="itemCount">
         <ng-container matColumnDef="Type">
             <th mat-header-cell *matHeaderCellDef>Type</th>
@@ -69,7 +70,8 @@
     </table>
 
     <!-- display other buttons -->
-    <p>
+    <hr/>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <app-static-buttons-component (notifyParent)="onClickStaticButtons($event)" [loading]="loading"
             [selected]="selected">
         </app-static-buttons-component>

@@ -3,10 +3,12 @@ section {
 }
 
 .tailoring-section {
-    background-color: aqua;
+    background-color: cyan;
+    color: blue;
     font-size: large;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-bottom: 5px;
+    height: 25px;
 }
 
 .tailoring-button-row {
@@ -17,11 +19,31 @@ section {
 .tailoring-button-row .mat-mdc-button-base {
     margin: 5px 5px 5px 0;
 }  
+
 .tailoring-label {
     display: table-cell;
-    font-size: 13px;
+    color: mediumblue;
+    font-size: 15px;
     margin-left: 8px;
     min-width: 120px;
     font-weight: bold;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.button {
+    height: 40px;
+    width: 240px;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.default {
+    color: black;
+}
+
+.highlight {
+    color: purple;
+    background-color: lightblue;
+    cursor: pointer;
 }
